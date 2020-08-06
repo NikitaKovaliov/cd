@@ -1,3 +1,25 @@
+server:
+  servlet:
+    context-path: /api
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:h2:mem:db
+    username: us
+    password: pa
+    driver-class-name: org.h2.Driver
+  liquibase:
+    url: jdbc:h2:mem:db
+    user: us
+    password: pa
+    change-log: classpath:liquibase/changelog.yml
+  h2:
+    console:
+      enabled: true
 bot:
   username: CityDescriptionServiceBot
   token: 1264178070:AAHMQEjH5CfzLeUs8YS1XaWNsmb3hJbw59Y

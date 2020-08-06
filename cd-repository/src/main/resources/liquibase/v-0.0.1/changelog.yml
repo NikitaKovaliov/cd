@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/v-0.0.1/2020-07-11-00_create_city_table.yml
+  - include:
+      file: liquibase/v-0.0.1/2020-07-11-01_insert_city_table_data.yml
